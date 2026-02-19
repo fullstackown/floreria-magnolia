@@ -1,877 +1,533 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <title>Plan Cheto - Planchas de Acero para Toda la Vida</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Descripción y Palabras Clave -->
   <meta name="description" content="Plan Cheto: Planchas de acero de 2.5 mm con kit burger. Diseñadas por herreros profesionales para durar toda la vida. Calidad garantizada desde Capilla del Monte, Córdoba.">
-  <meta name="keywords" content="plancha de acero, kit burger, asador, parrilla, acero 2.5mm, Plan Cheto, herreros profesionales, durabilidad, Capilla del Monte, Córdoba, productos de calidad, asado perfecto">
+  <meta name="keywords" content="plancha de acero, kit burger, asador, parrilla, acero 2.5mm, Plan Cheto, herreros profesionales, durabilidad, Capilla del Monte, Córdoba">
   <meta name="author" content="Plan Cheto">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://plancheto.com">
   <meta property="og:title" content="Plan Cheto - Planchas de Acero para Toda la Vida">
-  <meta property="og:description" content="Con Plan Cheto, llevá tu asado al próximo nivel. Planchas de acero de 2.5 mm con kit burger, diseñadas para durar toda la vida. Calidad premium desde Capilla del Monte, Córdoba.">
+  <meta property="og:description" content="Con Plan Cheto, llevá tu asado al próximo nivel. Planchas de acero de 2.5 mm con kit burger, diseñadas para durar toda la vida.">
   <meta property="og:image" content="https://plancheto.com/img/logonegro.jpg">
 
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://plancheto.com">
   <meta property="twitter:title" content="Plan Cheto - Planchas de Acero para Toda la Vida">
-  <meta property="twitter:description" content="Planchas de acero de 2.5 mm con kit burger, creadas por herreros profesionales para durar toda la vida. Ideal para asadores apasionados. Desde Capilla del Monte, Córdoba.">
   <meta property="twitter:image" content="https://plancheto.com/img/logonegro.jpg">
 
-  <!-- Favicon -->
-  <link href="https://plancheto.com/img/logonegro.jpg" rel="icon">
+  <link href="img/logonegro.jpg" rel="icon">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Edu+AU+VIC+WA+NT+Hand:wght@500&family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-  <!-- Libraries Stylesheet -->
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Customized Bootstrap Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
-</head>
 
-
-<style>
-  body {
-font-family: "Edu AU VIC WA NT Hand";
-/* font-optical-sizing: auto; */
-font-weight: 500;
-font-style: normal;
-
-}
-</style>
-
-<body>
-
-    <style>
-        
-
-        /* Icono del carrito */
-.cart-icon {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 9999; /* Siempre al frente */
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.cart-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  margin-top: 33px;
-}
-.dropdown-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-
-  .dropdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .dropdown-label {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    text-align: center;
-    color: #333;
-  }
-
-  .dropdown {
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .dropdown:focus {
-    border-color: #888;
-  }
-
-  .dropdown:hover {
-    border-color: #555;
-  }
-
-  .button-add {
-        display: none; /* Ejemplo de cambio de fondo */
-    }
-
-    .logo-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        /* background: #f8f9fa; */
-        background: #233730;
-        border-bottom: 2px solid #ccc;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo-mobile a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: #e1e814;
-    }
-
-    .logo-mobile a img.logo-placeholder {
-      width: 145px;
-      height: 110px;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
-    .logo-mobile .social-icons {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .logo-mobile .social-icons a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background: #3abeff3b;
-        /* border: 1px solid #ddd; */
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .logo-mobile .social-icons a:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .logo-mobile .social-icons img {
-        width: 20px;
-        height: 20px;
-    }
-
-    @media (max-width: 780px) {
-        /* Estilos para dispositivos móviles */
-        .logo-mobile a img.logo-placeholder {
-          width: 145px;
-          height: 110px;
-        }
-
-        .logo-mobile a strong {
-            font-size: 18px;
-        }
-
-        .logo-mobile .social-icons a {
-            width: 39px;
-            height: 39px;
-        }
-
-        .logo-mobile .social-icons img {
-            width: 18px;
-            height: 18px;
-        }
-    }
-
-    @media (min-width: 780px) {
-        /* Ajustes específicos para pantallas grandes */
-        .logo-mobile {
-            /* max-width: 1200px; */
-         
-            padding: 15px 30px;
-        }
-
-        .logo-mobile a img.logo-placeholder {
-          width: 145px;
-          height: 110px;
-        }
-
-        .logo-mobile a strong {
-            font-size: 24px;
-        }
-
-        .logo-mobile .social-icons a {
-            width: 45px;
-            height: 45px;
-        }
-
-        .logo-mobile .social-icons img {
-            width: 22px;
-            height: 22px;
-        }
-    }
-</style>
-
-<div class="logo-mobile">
-    <a href="#" class="text-decoration-none">
-        <img class="logo-placeholder" src="./img/logoblancoespatula.jpg" alt="Logo Placeholder">
-        <strong style="font-size: 15px;">Nuevo!</strong>
-    </a>
-    <div class="social-icons">
-        <a href="https://www.instagram.com/plan__cheto?igsh=MXBmdzJxcDFvOGJsdw==" target="_blank">
-            <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram">
-        </a>
-        <a href="https://wa.me/543548551382?text=Hola%20me%20comunico%20desde%20plancheto.com" target="_blank" target="_blank">
-            <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="WhatsApp">
-        </a>
-    </div>
-</div>
-        <!-- Topbar End -->
-
-
-
-
-        <style>
-
-          
-          .carousel__face:nth-child(6) {
-            background-image: url("https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781257/qbzictnj8gbsj2cosgix.png");
-            transform: rotateY(0deg) translateZ(270px); /* Menor distancia */
-          }
-          
-          .carousel__face:nth-child(2) {
-            background-image: url("https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781281/pzzuuj6mayn2u7aqjuhf.png");
-            transform: rotateY(60deg) translateZ(270px); /* Menor distancia */
-          }
-          
-          .carousel__face:nth-child(3) {
-            background-image: url("https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781293/iytgxixp48gvfa2ccqjp.png");
-            transform: rotateY(120deg) translateZ(270px); /* Menor distancia */
-          }
-          
-          .carousel__face:nth-child(4) {
-            background-image: url("https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781302/bfmkw7ont1ptydttitq5.png");
-            transform: rotateY(180deg) translateZ(270px); /* Menor distancia */
-          }
-          
-          .carousel__face:nth-child(5) {
-            background-image: url("https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781311/b0hb1yc7kqo58abasdec.png");
-            transform: rotateY(240deg) translateZ(270px); /* Menor distancia */
-          }
-          
-          .carousel__face:nth-child(1) {
-            background-image: url("https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781328/koqacjkbyfdwwywrmtbi.png");
-            transform: rotateY(300deg) translateZ(270px); /* Menor distancia */
-          }
-        
-          @keyframes rotate360 {
-            from {
-              transform: rotateY(0deg);
-            }
-            to {
-              transform: rotateY(-360deg);
-            }
-          }
-        
-          
-          .body-carrusel {
-    margin: 0;
-    background: linear-gradient(135deg, hsl(0, 0%, 1.6%), hsla(236.3, 100%, 47.6%, 0.8), hsl(0, 0%, 0%));
-    text-align: center;
-    font-family: sans-serif;
-    color: #fefefe;
-    padding: 20px;
-    position: relative; /* Asegura que los hijos no se vean afectados por elementos externos */
-  }
-
-  .container {
-    position: relative;
-    width: 320px;
-    min-height: 400px;
-    margin: 50px auto;
-    perspective: 1000px; /* Aisla las transformaciones 3D al contenedor */
-    padding: 20px;
-    z-index: 10;
-  }
-
-  .carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    animation: rotate360 30s infinite linear;
-  }
-
-  .carousel__face {
-    position: absolute;
-    width: 300px;
-    height: 69%;
-    top: 46px;
-    left: 10px;
-    right: 10px;
-    background-size: cover;
-    background-position: center -80px;
-    box-shadow: inset 0 0 0 2000px rgba(7, 0, 230, 0.15);
-    display: flex;
-    border-radius: 15px;
-    border: solid 1px black;
-  }
-
-  @keyframes rotate360 {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(-360deg);
-    }
-  }
-
-  /* Ajustes para pantallas móviles */
-  @media (max-width: 770px) {
-    .carousel__face:nth-child(6) {
-      display: none;
-    }
-
-    .carousel__face:nth-child(1) {
-      transform: rotateY(0deg) translateZ(220px);
-    }
-    .carousel__face:nth-child(2) {
-      transform: rotateY(72deg) translateZ(220px);
-    }
-    .carousel__face:nth-child(3) {
-      transform: rotateY(144deg) translateZ(220px);
-    }
-    .carousel__face:nth-child(4) {
-      transform: rotateY(216deg) translateZ(220px);
-    }
-    .carousel__face:nth-child(5) {
-      transform: rotateY(288deg) translateZ(220px);
-    }
-  }
-
-  /* Ajustes para pantallas más pequeñas */
-  @media (max-width: 350px) {
-    .carousel__face:nth-child(6) {
-      display: none;
-    }
-
-    .carousel__face {
-      width: 214px;
-      height: 61%;
-      top: -48px;
-    }
-
-    .carousel {
-      transform: scale(0.5);
-    }
-
-    .carousel__face:nth-child(1) {
-      transform: rotateY(0deg) translateZ(135px);
-    }
-    .carousel__face:nth-child(2) {
-      transform: rotateY(72deg) translateZ(135px);
-    }
-    .carousel__face:nth-child(3) {
-      transform: rotateY(144deg) translateZ(135px);
-    }
-    .carousel__face:nth-child(4) {
-      transform: rotateY(216deg) translateZ(135px);
-    }
-    .carousel__face:nth-child(5) {
-      transform: rotateY(288deg) translateZ(135px);
-    }
-  }
-</style>
-
-        
-  <div class="order-button-wrapper">
-     <a href="https://wa.me/543548551382?text=Hola%20me%20comunico%20desde%20plancheto.com.%20Queria%20consultar%20por%20stock%20disponible" target="_blank"><button class="order-button-one">
-        <img style="width: 30px;" src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="">
-        Consultar por Stock 
-    </button>
-  </a>
-</div>
-
-<style>
-    .order-button-wrapper {
-        display: flex;
-        justify-content: center; /* Centra horizontalmente el contenido */
-        margin: 20px 0; /* Ajusta el margen según tus necesidades */
-    }
-
-    .order-button-one {
-        display: flex;
-        align-items: center;
-        background: linear-gradient(to right, #25d366, #128c7e);
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background 0.3s, transform 0.3s;
-    }
-
-    .order-button-one:hover {
-        background: linear-gradient(to right, #128c7e, #25d366);
-        transform: translateY(-3px);
-    }
-
-    .order-button-one img {
-        margin-right: 10px; /* Ajusta el margen si es necesario */
-    }
-</style>
-
-
-
-  
   <style>
-    .section-titleE {
-      font-size: 2.5rem;
-      text-align: center;
-      font-weight: bold;
-      color: #fff;
-      position: relative;
-      text-transform: uppercase;
-      margin-bottom: 30px;
+    :root {
+      --pc-dark: #1a2e28;
+      --pc-dark-soft: #233730;
+      --pc-accent: #c9b227;
+      --pc-accent-hover: #e1d030;
+      --pc-white: #fafafa;
+      --pc-text: #2d3a36;
+      --pc-text-muted: #5a6b65;
+      --pc-whatsapp: #25d366;
+      --pc-whatsapp-dark: #128c7e;
+      --pc-radius: 12px;
+      --pc-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      --pc-shadow-hover: 0 8px 32px rgba(0,0,0,0.12);
     }
-  
-    .section-highlightT {
-      display: inline-block;
-      padding: 10px 20px;
-      background: linear-gradient(45deg, #ff0080, #ff8000, #ffea00);
-      border-radius: 15px;
-      color: #fff;
+
+    body {
+      margin: 0;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-      animation: pulse 2s infinite;
+      line-height: 1.6;
+      color: var(--pc-text);
+      background: var(--pc-white);
+      -webkit-font-smoothing: antialiased;
     }
-  
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      }
-      50% {
-        transform: scale(1.1);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-      }
-    }
-  </style>
-  
-  <div class="row px-xl-5">
-      <div class="body-card-product">
-          <div class="product-card">
-              <div class="product-image">
-                <style>
-                  /* number of images*/
-            .gallery {
-              --d: 15s;
-              /* duration */
-              display: grid;
-              overflow: hidden;
-              width: 380px;
-              -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
-            }
-            
-            .gallery > img {
-              grid-area: 1/1;
-              width: 100%;
-              aspect-ratio: 1.5;
-              /* object-fit: cover; */
-              height: 125%;
-              animation: r var(--d) linear infinite;
-            }
-            
-            .gallery > img:nth-child(2) {
-              animation-delay: calc(-0.2* var(--d));
-            }
-            
-            .gallery > img:nth-child(3) {
-              animation-delay: calc(-0.4* var(--d));
-            }
-            
-            .gallery > img:nth-child(4) {
-              animation-delay: calc(-0.6* var(--d));
-            }
-            
-            .gallery > img:nth-child(5) {
-              animation-delay: calc(-0.8* var(--d));
-            }
-            
-            @keyframes r {
-              80% {
-                transform: translate(-400%);
-              }
-              80.01% {
-                transform: translate(100%);
-              }
-            }
-            body {
-              margin: 0;
-              min-height: 100vh;
-              display: grid;
-              place-content: center;
-              /* background: #ecd078; */
-            }
-                </style>
-            
-            
-            <div class="gallery">
-              <img src="https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781257/qbzictnj8gbsj2cosgix.png" alt="the beach">
-              <img src="https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781281/pzzuuj6mayn2u7aqjuhf.png" alt="a girl doing kayak">
-              <img src="https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781293/iytgxixp48gvfa2ccqjp.png" alt="a small boat in the sea">
-              <img src="https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781302/bfmkw7ont1ptydttitq5.png" alt="a mountain">
-              <img src="https://res.cloudinary.com/dnrtz69wd/image/upload/v1733781311/b0hb1yc7kqo58abasdec.png" alt="a forest">
-            </div>
-              </div>
-              <div class="product-details">
-                  <h1 class="product-title">
-                      Kit Doble Hornalla - Horno - Parrilla
-                  </h1>
-                  <p class="product-description">
-                    Burger Kit , plancha de acero + smasher+ huevero doble + Espátula de acero inoxidable. 
-                    Plancha de dos hornallas, horno o fuego directo,  de 2.5 mm de espesor. 
-                    Diseñada y pensada para hacer todas las comidas que te imagines. 
-                    El Combo burger kit contiene, Plancha de Acero, Smasher de 3.2 mm de espesor, huevero doble y espátula de acero inoxidable. 
-                    Todo lo que necesitas para llevar tu cocina al siguiente nivel!
-                    Con un diseño único de 60mm de altura para cocinar todo lo que te imagines.. 
-                  </p>
-                  <p class="product-price">
-                      <span class="price-strikethrough">$88,000</span><br>
-                      <span class="price-highlight">$78,000</span>
-                  </p>
-                  <!-- <p class="discount-note">¡Te ahorras $10,000!</p> -->
-                  <!-- <div class="quantity-selector">
-                      <label for="quantity">Cantidad:</label>
-                      <input type="number" id="select-quantity" name="quantity" min="1" >
-                  </div> -->
-                  <button onclick="agregarPlancha()" class="order-button">
-                    <img style="width: 30px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F1%2F1393.png&f=1&nofb=1&ipt=058bd4862253ba0eaca38dd8db8859a5f32b3ded07d5e500e715126babc632c0&ipo=images" alt="">
-                    Agregar al Carrito</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  
-  <style>
-    .body-card-product {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      margin: 0 auto;
-      padding: 20px;
 
-  font-family: Arial, sans-serif;
+    .pc-header {
+      background: var(--pc-dark-soft);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: var(--pc-shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-  
-    .product-card {
+    .pc-header a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .pc-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pc-logo-wrap img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .pc-logo-text {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--pc-accent);
+    }
+    .pc-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pc-header-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      color: var(--pc-white);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .pc-header-actions a:hover {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.05);
+      color: var(--pc-white);
+    }
+    .pc-header-actions img {
+      width: 22px;
+      height: 22px;
+    }
+    .pc-wa-btn-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--pc-whatsapp);
+      color: #fff !important;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      width: auto;
+      height: auto;
+    }
+    .pc-wa-btn-header:hover {
+      background: var(--pc-whatsapp-dark);
+      color: #fff !important;
+    }
+    .pc-wa-btn-header img {
+      width: 22px;
+      height: 22px;
+      filter: brightness(0) invert(1);
+    }
+
+    /* Carousel de flyers - height 100% */
+    .pc-carousel-wrap {
+      width: 100%;
+      height: 75vh;
+      min-height: 320px;
+      max-height: 720px;
+      background: var(--pc-dark);
+    }
+    .pc-carousel-wrap .carousel,
+    .pc-carousel-wrap .carousel-inner,
+    .pc-carousel-wrap .carousel-item {
+      height: 100%;
+    }
+    .pc-carousel-wrap .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      background: var(--pc-dark);
+    }
+    .pc-carousel-wrap .carousel-control-prev,
+    .pc-carousel-wrap .carousel-control-next {
+      width: 48px;
+      height: 48px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background: rgba(0,0,0,0.4);
+      opacity: 1;
+    }
+    .pc-carousel-wrap .carousel-control-prev { left: 16px; }
+    .pc-carousel-wrap .carousel-control-next { right: 16px; }
+    .pc-carousel-wrap .carousel-control-prev:hover,
+    .pc-carousel-wrap .carousel-control-next:hover {
+      background: rgba(0,0,0,0.6);
+    }
+    .pc-carousel-wrap .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+    }
+    .pc-carousel-wrap .carousel-indicators .active {
+      background: var(--pc-accent);
+    }
+
+    .pc-cta-bar {
+      background: linear-gradient(135deg, var(--pc-whatsapp), var(--pc-whatsapp-dark));
+      padding: 16px 20px;
+      text-align: center;
+    }
+    .pc-cta-bar a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #fff;
+      color: var(--pc-whatsapp-dark);
+      padding: 14px 28px;
+      border-radius: var(--pc-radius);
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      box-shadow: var(--pc-shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pc-cta-bar a:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--pc-shadow-hover);
+      color: var(--pc-whatsapp-dark);
+    }
+    .pc-cta-bar a img {
+      width: 26px;
+      height: 26px;
+    }
+
+    .pc-section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    .pc-product-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      background: #fff;
+      border-radius: var(--pc-radius);
+      box-shadow: var(--pc-shadow);
+      overflow: hidden;
+    }
+    @media (min-width: 768px) {
+      .pc-product-card {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .pc-product-img {
+      height: 280px;
+      background: var(--pc-dark) center/cover no-repeat;
+    }
+    @media (min-width: 768px) {
+      .pc-product-img {
+        height: 100%;
+        min-height: 400px;
+      }
+    }
+    .pc-product-body {
+      padding: 28px 24px;
       display: flex;
       flex-direction: column;
-      max-width: 400px;
-      background: linear-gradient(to bottom right, #fffbf3, #ffe3b3);
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
     }
-  
-    .product-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    .pc-product-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--pc-dark);
+      margin: 0 0 12px;
+      line-height: 1.3;
     }
-  
-    .product-image {
+    .pc-product-desc {
+      font-size: 0.95rem;
+      color: var(--pc-text-muted);
+      margin: 0 0 20px;
+      flex-grow: 1;
+    }
+    .pc-product-price-wrap {
+      margin-bottom: 20px;
+    }
+    .pc-product-price-old {
+      font-size: 1rem;
+      color: var(--pc-text-muted);
+      text-decoration: line-through;
+    }
+    .pc-product-price {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--pc-dark);
+    }
+    .pc-btn-cart {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       width: 100%;
-      height: 250px;
-      background: url('https://res.cloudinary.com/dnrtz69wd/image/upload/v1733792849/dkikmyqwkmuvultpfdca.png') no-repeat center;
-      background-size: cover;
-      border-bottom: 4px solid #ffba08;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #e8a838, #d49428);
+      color: var(--pc-dark);
+      border: none;
+      border-radius: var(--pc-radius);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-  
-    .product-details {
-      padding: 25px;
+    .pc-btn-cart:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--pc-shadow-hover);
+    }
+    .pc-btn-cart img {
+      width: 22px;
+      height: 22px;
+    }
+    .pc-btn-wa-product {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background: var(--pc-whatsapp);
+      color: #fff;
+      border: none;
+      border-radius: var(--pc-radius);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .pc-btn-wa-product:hover {
+      background: var(--pc-whatsapp-dark);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .pc-btn-wa-product img {
+      width: 22px;
+      height: 22px;
+      filter: brightness(0) invert(1);
+    }
+
+    .pc-footer {
+      background: var(--pc-dark-soft);
+      color: rgba(255,255,255,0.8);
+      padding: 32px 24px 24px;
+      margin-top: 48px;
+    }
+    .pc-footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
       text-align: center;
     }
-  
-    .product-title {
-      font-size: 1.8rem;
-      color: black;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-  
-    .product-description {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 20px;
-      line-height: 1.6;
-    }
-  
-    .product-description strong {
-      color: #ff6f00;
-    }
-  
-    .product-price {
-      font-size: 1.5rem;
-      color: #333;
-      margin-bottom: 10px;
-    }
-  
-    .price-strikethrough {
-      color: #888;
-      text-decoration: line-through;
-      font-size: 1rem;
-    }
-  
-    .price-highlight {
-      color: #88000a;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-  
-    .discount-note {
-      color: #666;
-      font-size: 0.9rem;
+    .pc-footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
       margin-bottom: 20px;
     }
-  
-    .quantity-selector {
+    .pc-footer-links a {
+      color: var(--pc-accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .pc-footer-links a:hover {
+      color: var(--pc-accent-hover);
+      text-decoration: underline;
+    }
+    .pc-footer-copy {
+      font-size: 0.875rem;
+      opacity: 0.85;
+    }
+    .pc-footer-payment {
+      margin-top: 16px;
+    }
+    .pc-footer-payment img {
+      height: 28px;
+      width: auto;
+      opacity: 0.9;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--pc-dark-soft);
+      color: var(--pc-accent);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 25px;
+      box-shadow: var(--pc-shadow);
+      z-index: 999;
+      text-decoration: none;
+      transition: transform 0.2s;
     }
-  
-    .quantity-selector input {
-      width: 60px;
-      text-align: center;
-      padding: 8px;
-      font-size: 1.2rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-left: 10px;
+    .back-to-top:hover {
+      transform: scale(1.08);
+      color: var(--pc-accent);
     }
-  
-    .order-button {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  font-size: 1.2rem;
-  text-align: center;
-  background: linear-gradient(to bottom right, #FF9E43, #FF6F47);
-  color: black;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-  font-weight: 800;
-  font-family: Arial, sans-serif;
-}
-
-.order-button:hover {
-  background: linear-gradient(to bottom right, #FF6F47, #FF9E43);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-
-  
-    @media (min-width: 768px) {
-      .product-card {
-        flex-direction: row;
-        max-width: 800px;
-        height: 668px;
-      }
-  
-      .product-image {
-        width: 50%;
-        height: 100%;
-      }
-  
-      .product-details {
-        width: 50%;
-        padding: 30px;
-        text-align: left;
-      }
-  
-      .product-title {
-        font-size: 2rem;
-        margin-bottom: 10px;
-      }
-  
-      .product-description {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-      }
-  
-      .product-price {
-        font-size: 1.7rem;
-        margin-bottom: 15px;
-      }
+    .back-to-top img {
+      width: 28px;
+      height: 28px;
     }
 
-
-    .scroll-indicator {
-    position: fixed;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 1.5s infinite, pulse 2s infinite;
-    z-index: 1000;
-    border-radius: 50%;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateX(-50%) translateY(0);
+    .cart-icon {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      z-index: 999;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
     }
-    40% {
-      transform: translateX(-50%) translateY(-10px);
+    .cart-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
-    60% {
-      transform: translateX(-50%) translateY(-5px);
-    }
-  }
+  </style>
+</head>
+<body>
 
-  @keyframes pulse {
-    0%, 100% {
-      transform: translateX(-50%) scale(1);
-    }
-    50% {
-      transform: translateX(-50%) scale(1.2);
-    }
-  }
-</style>
+  <header class="pc-header">
+    <a href="#" class="pc-logo-wrap">
+      <img src="img/logoblancoespatula.jpg" alt="Plan Cheto">
+      <span class="pc-logo-text">Plan Cheto</span>
+    </a>
+    <div class="pc-header-actions">
+      <a href="https://www.instagram.com/plan__cheto?igsh=MXBmdzJxcDFvOGJsdw==" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="">
+      </a>
+      <a href="https://wa.me/543548551382?text=Hola%2C%20me%20comunico%20desde%20plancheto.com.%20Quer%C3%ADa%20consultar%20por%20stock%20disponible" target="_blank" rel="noopener" class="pc-wa-btn-header">
+        <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="">
+        WhatsApp
+      </a>
+    </div>
+  </header>
 
-<div class="scroll-indicator">
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 5v14"></path>
-    <path d="m19 12-7 7-7-7"></path>
-  </svg>
-</div>
-
-<script>
-  // Seleccionar el indicador por su clase
-  const scrollIndicator = document.querySelector('.scroll-indicator');
-
-  // Agregar el evento de clic
-  scrollIndicator.addEventListener('click', () => {
-    window.scrollBy({
-      top: 200, // Desplazar 200px hacia abajo
-      behavior: 'smooth' // Desplazamiento suave
-    });
-  });
-</script>
-        
-
-
-    <!-- Footer Start -->
-
-
-    <div class="container-fluid bg-dark text-secondary mt-5">
-      <div class="row px-xl-5">
-          <div class="col-lg-8 col-md-12">
-              <div class="row">
-                  <div class="col-md-4 mb-5">
-                      <h6 class="text-secondary text-uppercase mt-4 mb-3">CONTACTOS</h6>
-                      <div class="d-flex">
-                        <a class="btn btn-square" target="_blank" href="https://www.instagram.com/plan__cheto?igsh=MXBmdzJxcDFvOGJsdw==">
-                          <img style="width: 30px;" src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="">
-                      </a>
-                      <a href="https://wa.me/543548551382?text=Hola,%20me%20comunico%20desde%20plancheto.com" class="ml-2">
-                          <img style="width: 30px;" src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="">
-                      </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-          <div class="col-md-6 px-xl-0 mb-3 mb-md-0">
-              <p class="mb-md-0 text-center text-md-left text-secondary">
-                  &copy; <a class="text-primary" href="https://plancheto.com">www.plancheto.com</a> 2024<br>
-                  <a class="text-primary" href="https://argentinaoferta.com">www.argentinaoferta.com</a><br>
-                  <a class="text-primary" href="https://armortemplate.com">www.armortemplate.com</a><br>
-                  <a class="text-primary" href="https://picoai.app">www.picoai.app</a>
-              </p>
-              <a href="https://www.linkedin.com/in/francisco-grillo-518a2125a/" target="_blank" style="display: inline-block; text-decoration: none; color: inherit;">
-                  <div style="width: 100px; height: 24px; background-color: #0077b5; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
-                      <span style="color: white; font-size: 14px; font-family: Arial, sans-serif; font-weight: bold;">LinkedIn (Dev)</span>
-                  </div>
-              </a>
-          </div>
-          <div class="col-md-6 px-xl-0 text-center text-md-right">
-            <img style="width: 200px;" class="img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pisostateis.com.br%2Fwp-content%2Fuploads%2F2020%2F04%2Fmercadopago.png&f=1&nofb=1&ipt=5ac67512e5f4b5598819af96fc63f089d2a2fbbecac574603620709ad66f43bf&ipo=images" alt="">
+  <section class="pc-carousel-wrap">
+    <div id="flyerCarousel" class="carousel slide h-100" data-ride="carousel" data-interval="4500">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="img/flyers%20PLAN%20CHETO_FINAL_000.png" alt="Plan Cheto - Oferta 1">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/flyers%20PLAN%20CHETO_FINAL_1.png" alt="Plan Cheto - Oferta 2">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/flyers%20PLAN%20CHETO_FINAL_2.png" alt="Plan Cheto - Oferta 3">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/flyers%20PLAN%20CHETO_FINAL_3.png" alt="Plan Cheto - Oferta 4">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/flyers%20PLAN%20CHETO_FINAL_4.png" alt="Plan Cheto - Oferta 5">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/flyers%20PLAN%20CHETO_FINAL_5.png" alt="Plan Cheto - Oferta 6">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/flyers%20PLAN%20CHETO_FINAL_6.png" alt="Plan Cheto - Oferta 7">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#flyerCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#flyerCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+      <ol class="carousel-indicators">
+        <li data-target="#flyerCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#flyerCarousel" data-slide-to="1"></li>
+        <li data-target="#flyerCarousel" data-slide-to="2"></li>
+        <li data-target="#flyerCarousel" data-slide-to="3"></li>
+        <li data-target="#flyerCarousel" data-slide-to="4"></li>
+        <li data-target="#flyerCarousel" data-slide-to="5"></li>
+        <li data-target="#flyerCarousel" data-slide-to="6"></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="pc-cta-bar">
+    <a href="https://wa.me/543548551382?text=Hola%2C%20me%20comunico%20desde%20plancheto.com.%20Quer%C3%ADa%20consultar%20por%20stock%20disponible" target="_blank" rel="noopener">
+      <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="">
+      Consultar por stock por WhatsApp
+    </a>
   </div>
-  
-    <!-- Footer End -->
 
+  <section class="pc-section">
+    <div class="pc-product-card">
+      <div class="pc-product-img" style="background-image: url('img/flyers%20PLAN%20CHETO_FINAL%20sin%20precio.png');"></div>
+      <div class="pc-product-body">
+        <h1 class="pc-product-title">Kit Doble Hornalla - Horno - Parrilla</h1>
+        <p class="pc-product-desc">
+          Burger Kit: plancha de acero + smasher + huevero doble + espátula de acero inoxidable. Plancha de dos hornallas, horno o fuego directo, de 2.5 mm de espesor. Diseñada para hacer todas las comidas que te imagines. Combo con plancha de acero, smasher de 3.2 mm, huevero doble y espátula. Todo lo que necesitás para llevar tu cocina al siguiente nivel. Diseño único de 60 mm de altura.
+        </p>
+        <div class="pc-product-price-wrap">
+          <span class="pc-product-price-old">$88.000</span><br>
+          <span class="pc-product-price">$78.000</span>
+        </div>
+        <button type="button" onclick="agregarPlancha()" class="pc-btn-cart">
+          <img src="https://www.svgrepo.com/show/133951/shopping-cart.svg" alt="">
+          Agregar al carrito
+        </button>
+        <a href="https://wa.me/543548551382?text=Hola%2C%20quiero%20comprar%20el%20Kit%20Doble%20Hornalla.%20Me%20comunico%20desde%20plancheto.com" target="_blank" rel="noopener" class="pc-btn-wa-product">
+          <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="">
+          Comprar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Back to Top -->
-    <a onclick="agregarPlancha()" href="/cart.html"  class="p-1 rounded btn btn-primary back-to-top"><img style="width: 50px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F019%2F787%2F018%2Foriginal%2Fshopping-cart-icon-shopping-basket-on-transparent-background-free-png.png&f=1&nofb=1&ipt=1e34fb28eebfc5358ba27c6a26145d6f7422fa7e81ba45b55d27c97799ad0223&ipo=images" alt=""></a>
+  <footer class="pc-footer">
+    <div class="pc-footer-inner">
+      <div class="pc-footer-links">
+        <a href="https://www.instagram.com/plan__cheto?igsh=MXBmdzJxcDFvOGJsdw==" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/543548551382" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="pc-footer-copy">&copy; plancheto.com</p>
+      <div class="pc-footer-payment">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pisostateis.com.br%2Fwp-content%2Fuploads%2F2020%2F04%2Fmercadopago.png&f=1&nofb=1&ipt=5ac67512e5f4b5598819af96fc63f089d2a2fbbecac574603620709ad66f43bf&ipo=images" alt="Mercado Pago">
+      </div>
+    </div>
+  </footer>
 
+  <a href="/cart.html" onclick="return true;" class="back-to-top" aria-label="Ver carrito">
+    <img src="https://www.svgrepo.com/show/133951/shopping-cart.svg" alt="">
+  </a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="./cart.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-      const getOrCreateUserId = () => {
-        let userId = localStorage.getItem("userId");
-    
-        if (!userId) {
-          // Generar un nuevo UUID
-          userId = crypto.randomUUID();
-          localStorage.setItem("userId", userId);
-        }
-    
-        return userId;
-      };
-    
-      const userId = getOrCreateUserId();
-      console.log("ID único de usuario conectado:", userId);
-    });
-    
-    </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+  <script src="js/main.js"></script>
+  <script src="cart.js"></script>
 </body>
-
 </html>
