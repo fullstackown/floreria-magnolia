@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import bodyParser from "body-parser";
 import mercadopago from "mercadopago";
@@ -5,9 +6,30 @@ import path from "path";
 import axios from "axios";
 
 const app = express();
+
+const publicPath = path.join(process.cwd(), "src", "dist");
+
+// Cabeceras de seguridad (Google valora sitios seguros)
+app.use((req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");
+  next();
+});
+
 app.use(bodyParser.json());
 
-const publicPath = path.join(process.cwd(), "./src/dist");
+// SEO: robots.txt y sitemap.xml con Content-Type correcto para crawlers
+app.get("/robots.txt", (req, res) => {
+  res.type("text/plain");
+  res.sendFile(path.join(publicPath, "robots.txt"));
+});
+
+app.get("/sitemap.xml", (req, res) => {
+  res.type("application/xml");
+  res.sendFile(path.join(publicPath, "sitemap.xml"));
+});
+
+// Archivos estáticos (HTML, CSS, JS, img, etc.)
 app.use(express.static(publicPath));
 
 // Ruta principal
@@ -92,8 +114,8 @@ app.post("/webhook", async (req, res) => {
 
 
 
-// Iniciar servidor
-const PORT = 6767;
+// Iniciar servidor (PORT por variable de entorno en producción)
+const PORT = process.env.PORT || 6767;
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Servidor Plan Cheto en http://localhost:${PORT}`);
 });

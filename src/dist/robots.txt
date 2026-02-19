@@ -1,0 +1,11 @@
+# Plan Cheto - robots.txt
+# https://plancheto.com
+
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /shipment.html
+Disallow: /checkout.html
+
+# Sitemap
+Sitemap: https://plancheto.com/sitemap.xml
