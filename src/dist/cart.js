@@ -7,7 +7,7 @@
         let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
         const producto = {
-            imagen: 'https://res.cloudinary.com/dnrtz69wd/image/upload/v1733792849/dkikmyqwkmuvultpfdca.png', // Imagen de ejemplo
+            imagen: 'img/flyers%20PLAN%20CHETO_FINAL%20sin%20precio.png',
             titulo: 'Plancha + Kit Burger',
             // color: colorSeleccionado,
             precio: 78000,
